@@ -28,6 +28,11 @@
   --layout-05: 64px;
   --layout-06: 96px;
   --layout-07: 160px;
+  --break-s: 320px;
+  --break-m: 672px;
+  --break-l: 1056px;
+  --break-xl: 1312px;
+  --break-max: 1584px;
 }
 
 * {
@@ -86,6 +91,13 @@ a:hover {
   opacity: .6;
 }
 
+hr {
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color: var(--grey-10);
+}
+
 .hover--opacity:hover {
   opacity: .6;
 }
@@ -103,9 +115,8 @@ h1 {
 
 .bx--grid {
   width: 100%;
-  max-width: 1584px;
-  padding-left: var(--layout-05);
-  padding-right: var(--layout-05);
+  max-width: var(--break-l);
+  padding: 0 var(--layout-02) 0 var(--layout-02);
 }
 
 /* TYPEOGRAPHY */
@@ -136,7 +147,7 @@ h1 {
   letter-spacing: 0;
 }
 
-.productive-heading--01 {
+.heading--01 {
   font-size: 14px;
   font-weight: 500;
   font-stretch: normal;
@@ -145,7 +156,7 @@ h1 {
   letter-spacing: 0;
 }
 
-.productive-heading--02 {
+.heading-02 {
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -154,25 +165,7 @@ h1 {
   letter-spacing: 0;
 }
 
-.productive-heading--03 {
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 27px;
-  letter-spacing: 0;
-}
-
-.productive-heading--04 {
-  font-size: 28px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 36px;
-  letter-spacing: 0;
-}
-
-.productive-heading--05 {
+.expressive-heading-04  {
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;
@@ -181,7 +174,7 @@ h1 {
   letter-spacing: 0;
 }
 
-.productive-heading--06 {
+.expressive-heading-05  {
   font-size: 42px;
   font-weight: normal;
   font-stretch: normal;
@@ -190,21 +183,12 @@ h1 {
   letter-spacing: 0;
 }
 
-.productive-heading--07 {
+.display-01 {
   font-size: 54px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 64px;
-  letter-spacing: 0;
-}
-
-.expressive-paragraph--01 {
-  font-size: 28px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 36px;
   letter-spacing: 0;
 }
 
@@ -363,4 +347,36 @@ h1 {
 
 .card__content {
   margin-left: var(--layout-03);
+}
+
+/*break-m*/
+@media only screen and (max-width: 672px) {
+  .bx--grid {
+    padding: 0 var(--layout-01) 0 var(--layout-01);
+  }
+
+  .expressive-heading-04  {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .expressive-heading-05  {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .display-01 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+}
+
+/*break-s*/
+@media only screen and (max-width: 320px) {
+  .expressive-heading-05  {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
 }

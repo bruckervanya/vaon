@@ -1,22 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js"></script>
 </head>
-
 <body>
-  <form action="insert.php" method="post">
-    Value1: <input type="text" name="field1" /><br />
-    Value2: <input type="text" name="field2" /><br />
-    Value3: <input type="text" name="field3" /><br />
-    Value4: <input type="text" name="field4" /><br />
-    Value5: <input type="text" name="field5" /><br />
-    <input type="submit" />
-  </form>
 
-  <p id="target-id"></p>
+<?php
+    $db_connection = pg_connect("host=localhost dbname=vanyabrucker user=vanyabrucker password=");
+    if($db_connection) {
+       echo 'connected';
+    } else {
+        echo 'there has been an error connecting';
+    }
+?>
+<table>
+    <tr>
+        <th onclick="toggleOverlay()">
+            <h1></h1>
+            <img style="width: 50%;" src="https://www.prada.com/content/dam/pradanux_products/U/UMM/UMM985/C5WF0040/UMM985_C5W_F0040_SLF.png" alt="Prada Worsted Wool V-Neck Sweater 1">
+        </th>
+        <th onclick="toggleOverlay()">
+            <h1>Name_TODO</h1>
+            <img style="width: 50%;" src="https://www.prada.com/content/dam/pradanux_products/U/UMM/UMM985/C5WF0040/UMM985_C5W_F0040_SLF.png" alt="Prada Worsted Wool V-Neck Sweater 1">
+        </th>
+    </tr>
+    <tr>
+        <th onclick="toggleOverlay()">
+            <h1>Name_TODO</h1>
+            <img style="width: 50%;" src="https://www.prada.com/content/dam/pradanux_products/U/UMM/UMM985/C5WF0040/UMM985_C5W_F0040_SLF.png" alt="Prada Worsted Wool V-Neck Sweater 1">
+        </th>
+        <th onclick="toggleOverlay()">
+            <h1>Name_TODO</h1>
+            <img style="width: 50%;" src="https://www.prada.com/content/dam/pradanux_products/U/UMM/UMM985/C5WF0040/UMM985_C5W_F0040_SLF.png" alt="Prada Worsted Wool V-Neck Sweater 1">
+        </th>
+    </tr>
+</table>
+    <div id="overlay" class="display--none">
+        <button onclick="toggleOverlay()">back</button>
+        <button onclick="toggleOverlay()">buy_TODO</button>
+        <button onclick="toggleOverlay()">add cart_TODO</button>
+        <button onclick="toggleOverlay()">save_TODO</button>
+        <button onclick="toggleOverlay()">share_TODO</button>
+        <h1>Name_TODO</h1>
+        <p>Price_TODO</p>
+        <p>Size_TODO</p>
+        <p>Brand_TODO</p>
+        <p>Type_TODO</p>
+    </div>
+
 </body>
-
 </html>

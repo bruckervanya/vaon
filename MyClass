@@ -1,7 +1,0 @@
-public class MyClass {
-    /*String[] brands = {"prada", "gucci", "versace", "hm"};
-    document.getElementById('target-id').innerHTML = 'html data';*/
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
-}

@@ -1,55 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="js.js"></script>
+  <title>Brucker + Partners</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Brucker + Partners" />
+  <meta name="description" content="Brucker + Partners is a Swiss technology firm specialized in software development." />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://www.vaon.ch">
 </head>
+
 <body>
-
-<?php
-    $db_connection = pg_connect("host=localhost dbname=vanyabrucker user=vanyabrucker password=");
-    if($db_connection) {
-       echo 'connected';
-    } else {
-        echo 'there has been an error connecting';
-    }
-?>
-<table>
-    <tr>
-        <th onclick="toggleOverlay()">
-            <h1></h1>
-            <img style="width: 50%;" src="https://www.prada.com/content/dam/pradanux_products/U/UMM/UMM985/C5WF0040/UMM985_C5W_F0040_SLF.png" alt="Prada Worsted Wool V-Neck Sweater 1">
-        </th>
-        <th onclick="toggleOverlay()">
-            <h1>Name_TODO</h1>
-            <img style="width: 50%;" src="https://www.prada.com/content/dam/pradanux_products/U/UMM/UMM985/C5WF0040/UMM985_C5W_F0040_SLF.png" alt="Prada Worsted Wool V-Neck Sweater 1">
-        </th>
-    </tr>
-    <tr>
-        <th onclick="toggleOverlay()">
-            <h1>Name_TODO</h1>
-            <img style="width: 50%;" src="https://www.prada.com/content/dam/pradanux_products/U/UMM/UMM985/C5WF0040/UMM985_C5W_F0040_SLF.png" alt="Prada Worsted Wool V-Neck Sweater 1">
-        </th>
-        <th onclick="toggleOverlay()">
-            <h1>Name_TODO</h1>
-            <img style="width: 50%;" src="https://www.prada.com/content/dam/pradanux_products/U/UMM/UMM985/C5WF0040/UMM985_C5W_F0040_SLF.png" alt="Prada Worsted Wool V-Neck Sweater 1">
-        </th>
-    </tr>
-</table>
-    <div id="overlay" class="display--none">
-        <button onclick="toggleOverlay()">back</button>
-        <button onclick="toggleOverlay()">buy_TODO</button>
-        <button onclick="toggleOverlay()">add cart_TODO</button>
-        <button onclick="toggleOverlay()">save_TODO</button>
-        <button onclick="toggleOverlay()">share_TODO</button>
-        <h1>Name_TODO</h1>
-        <p>Price_TODO</p>
-        <p>Size_TODO</p>
-        <p>Brand_TODO</p>
-        <p>Type_TODO</p>
+  <header class="flex--justify-content--center">
+    <div class="bx--grid flex flex--justify-content--space-between">
+      <a href="index.html">
+        <p class="heading-02 color--white">Brucker + Partners</p>
+      </a>
+      <nav class="flex">
+        <a href="people.html">
+          <p class="heading-02 margin--left--layout-05 color--white">Contact</p>
+        </a>
+        <a href="career.html">
+          <p class="heading-02 margin--left--layout-02 color--white">About</p>
+        </a>
+        <a href="career.html">
+          <p class="heading-02 margin--left--layout-02 color--white">Insights</p>
+        </a>
+      </nav>
     </div>
-
+  </header>
+  <main>
+    <section class="flex--justify-content--center" style="background-image: url('media/image/openai-gradient.png');">
+      <div class="bx--grid flex flex-wrap--wrap margin--top--layout-07 margin--bottom--layout-06" style="z-index: 2;">
+        <div class="col-6">
+          <h2 class="expressive-heading-04 color--white">We make it happen</h2>
+          <h1 class="display-01 margin--top--spacing-06 color--white">Design & Software</h1>
+        </div>
+        <div class="col-6 flex--align-items--flex-end flex">
+          <p class="color--white">Firm for everything software. We build websites, applications, and elaborate online business services.</p>
+        </div>
+      </div>
+    </section>
+    <section class="margin--top--layout-05 flex-direction--column flex--align-items--center">
+      <div class="bx--grid flex flex-wrap--wrap flex--justify-content--space-between">
+        <h2 class="expressive-heading-05 col-3">Latest insights</h2>
+        <!--<p class="expressive-heading-04 margin--top--spacing-06">We provide the capabilities you need to succeed with your product or service.</p>-->
+        <div class="col-4">
+          <a href="#">
+            <h3 class="expressive-heading-04">Brucker + Partners to release design system</h3>
+            <p class="margin--top--layout-03">Sep 20, 2020</p>
+          </a>
+          <a href="#">
+            <h3 class="expressive-heading-04 margin--top--layout-05">Head of Firm to throw exclusive party</h3>
+            <p class="margin--top--layout-03">Jul 7, 2020</p>
+          </a>
+          <a href="insights.html" class="margin--top--layout-05">
+            <h3 class="expressive-heading-04">View all</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section class="margin--top--layout-06 flex--justify-content--center">
+      <div class="bx--grid">
+        <div class="background-color--grey-10 padding--top--layout-05 padding--left--layout-05 padding--right--layout-05 padding--bottom--layout-05">
+          <p class="expressive-heading-05">“Working with Brucker + Partners feels like having an extra co-founder on speed dial.”</p>
+          <p class="margin--top--spacing-06 heading-02">— Michael Wechner, CEO Wyona</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="flex--justify-content--center margin--top--layout-06">
+    <div class="bx--grid flex flex--justify-content--space-between flex-direction--column">
+      <div class="margin--top--layout-05 margin--bottom--layout-06">
+        <p class="expressive-heading-05 color--white">Have an Idea?</p>
+        <p class="expressive-heading-05 margin--top--spacing-06"><span class="a--internal hover--opacity"><a href="contact.html" class="color--white">Tell us about it</a></span> 👋</p>
+      </div>
+      <hr class="background-color--grey-80">
+      <section class="flex margin--top--layout-02">
+        <p class="color--white">© Brucker + Partners</p>
+        <a href="privacy.html" class="margin--left--layout-04">
+          <p class="color--white">Privacy Policy</p>
+        </a>
+      </section>
+    </div>
+  </footer>
 </body>
+
 </html>

@@ -36,7 +36,9 @@
   --break-max: 1584px;
   --col-3: 240px;
   --col-4: 328px;
+  --col-5: 416px;
   --col-6: 504px;
+  --col-7: 592px;
 }
 
 * {
@@ -50,19 +52,24 @@ html {
 
 body {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: 0;
 }
 
 header {
   position: absolute;
+  top: 0;
   width: 100%;
   padding-top: var(--layout-02);
   padding-bottom: var(--layout-02);
   display: flex;
   align-items: center;
   z-index: 5;
+}
+
+header.white {
+  border-bottom: 2px solid var(--grey-10);
 }
 
 header a {
@@ -218,6 +225,10 @@ h1 {
   color: var(--white);
 }
 
+.color--grey-60 {
+  color: var(--grey-60);
+}
+
 .color--grey-70 {
   color: var(--grey-70);
 }
@@ -234,6 +245,10 @@ h1 {
   background-color: var(--grey-90);
 }
 
+.background-color--black {
+  background-color: black;
+}
+
 .fill--white g polygon {
   fill: var(--white) !important;
 }
@@ -247,8 +262,32 @@ h1 {
   margin-left: var(--spacing-02);
 }
 
+/* 8px */
+.margin--top--spacing-03 {
+  margin-top: var(--spacing-03);
+}
+
+/* 12px */
+.margin--top--spacing-04 {
+  margin-top: var(--spacing-04);
+}
+
 .margin--left--spacing-04 {
   margin-left: var(--spacing-04);
+}
+
+/* 16px */
+.margin--top--spacing-05 {
+  margin-top: var(--spacing-05);
+}
+
+/* 24px */
+.margin--top--spacing-06 {
+  margin-top: var(--spacing-06);
+}
+
+.margin--top--spacing-07 {
+  margin-top: var(--spacing-07);
 }
 
 .margin--top--layout-02 {
@@ -265,25 +304,12 @@ h1 {
 }
 
 /* 48px */
-.margin--top--spacing-04 {
-  margin-top: var(--spacing-04);
+.margin--top--layout-04 {
+  margin-top: var(--layout-04);
 }
 
 .margin--left--layout-04 {
   margin-left: var(--layout-04);
-}
-
-.margin--top--spacing-05 {
-  margin-top: var(--spacing-05);
-}
-
-/* 24px */
-.margin--top--spacing-06 {
-  margin-top: var(--spacing-06);
-}
-
-.margin--top--spacing-07 {
-  margin-top: var(--spacing-07);
 }
 
 /* 64px */
@@ -420,9 +446,19 @@ h1 {
   max-width: var(--col-4);
 }
 
+.col-5 {
+  width: 100%;
+  max-width: var(--col-5);
+}
+
 .col-6 {
   width: 100%;
   max-width: var(--col-6);
+}
+
+.col-7 {
+  width: 100%;
+  max-width: var(--col-7);
 }
 
 .column--4--2 {
@@ -438,6 +474,10 @@ h1 {
 @media only screen and (max-width: 728px) {
   .bx--grid {
     padding: 0 var(--layout-01) 0 var(--layout-01);
+  }
+
+  body {
+    font-size: 16px;
   }
 
   .expressive-heading-04 {

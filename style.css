@@ -91,9 +91,9 @@ footer {
 }
 
 .ul--text {
-  list-style-position: outside;
-  margin: 0 16px 0 18px;
-  padding: 0;
+  /*list-style-position: outside;*/
+  /*margin: 0 16px 0 18px;*/
+  padding: 0 0 0 24px;
 }
 
 .ul--text li {

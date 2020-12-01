@@ -220,6 +220,18 @@ h1 {
   letter-spacing: 0;
 }
 
+.font-weight--500 {
+  font-weight: 500;
+}
+
+.font-family--serif {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
 /* COLOR */
 .color--white {
   color: var(--white);
@@ -297,6 +309,8 @@ h1 {
   margin-top: var(--spacing-06);
 }
 
+
+/* 32px */
 .margin--top--spacing-07 {
   margin-top: var(--spacing-07);
 }
@@ -491,6 +505,25 @@ h1 {
 
 .column--4--2:last-of-type {
   margin-right: 0;
+}
+
+.in-view {
+  transform: translateY(150px);
+  opacity: 0;
+  animation: come-in 0.8s ease forwards;
+}
+
+.already-visible {
+  transform: translateY(0);
+  opacity: 1;
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*break-m / 8 columns*/

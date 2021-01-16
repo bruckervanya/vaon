@@ -563,3 +563,9 @@ h1 {
     line-height: 40px;
   }
 }
+
+
+canvas{
+  display: block;
+  overflow: hidden;
+}

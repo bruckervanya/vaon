@@ -12,6 +12,7 @@
   <link rel="canonical" href="https://www.bruckerandpartners.com">
   <script src="jquery-3.5.1.min.js"></script>
   <script src="jquery.visible.min.js"></script>
+  <script src="game_of_life.js"></script>
 </head>
 
 <body>
@@ -40,6 +41,12 @@
       <div class="bx--grid flex flex-wrap--wrap margin--top--layout-07 margin--bottom--layout-06" style="z-index: 2;">
         <div class="">
           <h1 class="display-01 margin--top--spacing-06 color--white">Reliable, price competitive software agency with solid expertise</h1>
+        </div>
+        <div class="" style="overflow: hidden;">
+          <canvas class="margin--top--layout-05" id="canvas" width="504" height="504"></canvas>
+          <div class="color--white" id="cycle" style="display: none;">0</div>
+          <div id="isStable"></div>
+          <div id="isDone"></div>
         </div>
       </div>
     </section>

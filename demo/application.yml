@@ -1,0 +1,11 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 69012e33a1ae104f5130
+            clientSecret: 2c2188ab89ce3b7b2859ca42d6f9e782099ea038
+          #squidex-api:
+            #clientId: copine-kinowerbung-website:read
+            #clientSecret: 0hmsyypny44ds5xtyyfl67bjhemvm7v9tbxh0r26mysx
